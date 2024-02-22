@@ -3,56 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>LIUDMYLA PALADIICHUK</title>
+    <link href="https://fonts.googleapis.com/css2?family=Protest+Revolution&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css">
+    <link rel="stylesheet" href="./css/styles.css" />
 </head>
 <body>
 <main>
-    <section>
-        <h1>LIUDMYLA PALADIICHUK</h1>
-        <p>Junior Frontend developer</p>
-        <p>I learn fast, responsible and purposeful Front-End developer with knowledge of HTML, CSS, JS and React. I have
-            experience of working in a team . I confidently and conscientiously carry out the assigned tasks and in
-            difficult and
-            dynamic conditions I quickly adapt to the situation and solve them as efficiently as possible.</p>
-    
-        <div>
-            <h2>Project experience</h2>
-            <ul>
-                <li><a href="https://lyudmyla26.github.io/goit-markup-hw-07" target="_blank" title="Project WebStudio">WebStudio</a>
-                <p>A business application that helps you find better solutions for automating simple operations. Used technical skills:
-                HTML5/CSS3, Adaptive design, GIT. The whole project was developed by me.</p></li>
-
-                <li><a href="https://sheremeta-ivan.github.io/Project-group-6/" target="_blank" title="Project Simply Chocolate">Simply Chocolate</a>
-                <p>An app with a responsive layout, swiper, and order form. Used technical skills: HTML5/CSS3, Adaptive design, GIT,
-                JavaScript. In this project, I developed a header.</p></li>
-
-                <li><a href="https://sheremeta-ivan.github.io/Project-JS-TastyTreats/" target="_blank" title="Project Tasty Treats">Tasty Treats</a><p>This website is for sharing recipes. Where you can save interesting recipes for yourself, give them feedback. Skills
-                used here: HTML\CSS, JavaScript, adaptive layout, Rest API, GIT. In this project I designed a modal window.</p></li>
-
-                <li><a href="https://songlad.github.io/HEALTH_EN/" target="_blank" title="HEALTH_EN" >Healthy Hub</a>
-                <p>This is a web application for monitoring the water consumed, counting calories. Which calculates data exclusively
-                according to user parameters. In this project, I worked with Redux and its state, partly with the configuration page.</p></li>
-            </ul>
-        </div>
-    <div>
-        <h2>Education</h2>
-        <ul>
-            <li>2023 : IT School GoIT\Full Stack Developer</li>
-            <li>2013-2019 : Chernivtsi National University named after Yury Fedkovich\ Finance, banking and insurance</li>
-        </ul>
-
-    </div>
-    </section>
-
+<div class="container">
     <!-- Sidebar -->
     <aside>
-        <img src="./images/2D5062BF-0602-4A4C-94F5-FD47BD090BBF_1_201_a.jpeg" width="150" alt="аватар">
-       
+        <div class="thumb-avatar">
+        <img src="./images/2D5062BF-0602-4A4C-94F5-FD47BD090BBF_1_201_a.jpeg" alt="аватар" width="264"	height="330" class="avatar">
+    </div>
+    <div class="aside-date">
         <!-- Contacts -->
-        <div><h2>Contacts</h2>
-        <ul>
-            <li><a href="tel:+380973186948">+38 097 318 69 48</a></li>
-            <li><a href="mailto:l.stesko@ukr.net">l.stesko@ukr.net</a></li>
+        <div><h2 class="title-aside">Contacts</h2>
+        <ul class="contacts-date aside-list" >
+            <li><a href="tel:+380973186948" class="telephone">+38 097 318 69 48</a></li>
+            <li><a href="mailto:l.stesko@ukr.net" >l.stesko@ukr.net</a></li>
             <li><a href="https://www.linkedin.com/in/liudmylapaladiichuk/" target="_blank" title="Linkedin" >Linkedin</a></li>
             <li><a href="https://github.com/Lyudmyla26" target="_blank" title="GitHub" >GitHub</a></li>
             <li><a
@@ -61,8 +31,8 @@
         </ul></div>
 
     <!-- Hard Skills -->
-        <div><h2>Hard Skills</h2>
-        <ul>
+        <div><h2 class="title-aside">Hard Skills</h2>
+        <ul class="aside-list">
             <li>HTML5\CSS3</li>
             <li>Responsive\Adaptive design</li>
             <li>GitHub</li>
@@ -70,8 +40,8 @@
         </ul></div>
         
         <!-- Soft Skills -->
-        <div><h2>Soft Skills</h2>
-        <ul>
+        <div><h2 class="title-aside">Soft Skills</h2>
+        <ul class="aside-list">
             <li>Organized</li>
             <li>Communication</li>
             <li>Teamwork</li>
@@ -80,15 +50,81 @@
         </ul></div>
         
         <!-- Languages -->
-        <div><h2>Languages</h2>
-        <ul>
+        <div><h2 class="title-aside">Languages</h2>
+        <ul class="aside-list">
             <li><span>English</span><span>Pre-Intermediate</span></li>
             <li><span>Ukrainian</span><span>Native</span></li>
         
-        </ul></div>
+        </ul></div></div>
 
     </aside>
-    </main>
+    <section>
+        <div class="hero">
+        <h1 class="title">LIUDMYLA PALADIICHUK</h1>
+        <p class="vacancy">Junior Frontend developer</p>
+        <p class="description">I learn fast, responsible and purposeful Front-End developer with knowledge of HTML, CSS, JS and React. I have
+            experience of working in a team . I confidently and conscientiously carry out the assigned tasks and in
+            difficult and
+            dynamic conditions I quickly adapt to the situation and solve them as efficiently as possible.</p>
+    </div>
+        <div>
+            <h2 class="title-aside">Project experience</h2>
+            <ul class="projects-date">
+                <li class="projects-item"><img src="./images/WebStudio.jpg" alt="project photo" width="150" class="project-photo"> 
+                    <div>
+                    <a href="https://lyudmyla26.github.io/goit-markup-hw-07" target="_blank"
+                        title="Project WebStudio">WebStudio</a>
+                    <p>A business application that helps you find better solutions for automating simple operations. Used
+                        technical skills:
+                        HTML5/CSS3, Adaptive design, GIT. The whole project was developed by me.</p>
+                        </div>
+                </li>
     
+                <li class="projects-item"><img src="./images/Simply Chocolate.jpg" alt="project photo" width="150" class="project-photo">
+                    <div>
+                    <a href="https://sheremeta-ivan.github.io/Project-group-6/" target="_blank"
+                        title="Project Simply Chocolate">Simply Chocolate</a>
+                    <p>An app with a responsive layout, swiper, and order form. Used technical skills: HTML5/CSS3, Adaptive
+                        design, GIT,
+                        JavaScript. In this project, I developed a header.</p>
+                        </div>
+                </li>
+    
+                <li class="projects-item">
+                    <img src="./images/Tasty Treats.jpg" alt="project photo" width="150" class="project-photo">
+                    <div>
+                    <a href="https://sheremeta-ivan.github.io/Project-JS-TastyTreats/" target="_blank"
+                        title="Project Tasty Treats">Tasty Treats</a>
+                    <p>This website is for sharing recipes. Where you can save interesting recipes for yourself, give them
+                        feedback. Skills
+                        used here: HTML\CSS, JavaScript, adaptive layout, Rest API, GIT. In this project I designed a modal
+                        window.</p></div>
+                </li>
+    
+                <li class="projects-item">
+                    <img src="./images/Healthy Hub.jpg" alt="project photo" width="150" class="project-photo">
+                    <div>
+                    <a href="https://songlad.github.io/HEALTH_EN/" target="_blank" title="HEALTH_EN">Healthy Hub
+                </a>
+                    <p>This is a web application for monitoring the water consumed, counting calories. Which calculates data
+                        exclusively
+                        according to user parameters. In this project, I worked with Redux and its state, partly with the
+                        configuration page.</p></div>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <h2 class="title-aside">Education</h2>
+            <ul>
+                <li>
+                    <a href="https://fileview.fwdcdn.com/?url=https://mail.ukr.net/api/public/file_view/list%3Ftoken%3DHj57zq3hA0Yo51bhEX2neereKWsVbnq6ce8kFDHkrs8g-ARAgLyBHpU0_sIW9ooWlyEDvnqyYUQRYt6azDSOpBUvR2F8Ypl0MVnC:acGhCbkeUNty_40R%26r%3D1708510089980&default_mode=view&lang=uk#start=0">2023 : IT School GoIT\Full Stack Developer</a></li>
+                <li>2013-2019 : Chernivtsi National University named after Yury Fedkovich\ Finance, banking and insurance
+                </li>
+            </ul>
+    
+        </div>
+    </section>
+    </main>
+    </div>
 </body>
 </html>
