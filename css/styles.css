@@ -41,66 +41,113 @@ aside {
 background-color: var(--aside);
 }
 .container{
-    max-width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
     display: flex;
     gap: 15px;
-    padding:  15px;
+    padding: 15px;
+    max-width: 1240px;
+    margin-left: auto;
+    margin-right: auto;
+   
+}
+.avatar-container{
+    display: flex;
+        justify-content: center;
+        align-items: center;
+        max-height: 345px;
+        max-width: 280px;
+        
 }
 .thumb-avatar{
-    width: 280px;
+    position: relative;
+   width: 280px;
     height: 345px;
     border-radius: 50%;
     background-color: var(--white);
     display: flex;
     justify-content: center;
     align-items: center;
+        overflow: hidden;
+        transition: transform 0.5s;
 }
+.thumb-avatar:hover {
+    transform: rotateY(180deg);
+}
+.logo {
+    width: 264px;
+    height: 330px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    border-radius: 50%;
+    transition: opacity 0.5s;
+}
+
+.thumb-avatar:hover .logo {
+    opacity: 1;
+}
+
 .avatar{
+    max-width: 264px;
+        max-height: 330px;
     border-radius: 50%;
 }
 .aside-date {
     padding-left: 30px;
 }
 .title-aside {
+margin: 15px 0 10px;
+
 font-size: 28px;
 line-height: 1.5;
 letter-spacing: 0.02em;
-margin: 15px 0 10px;
+
 }
-.aside-list>li {
+.aside-list>li:not(:last-child) {
     margin-bottom: 8px;
 }
 
+.languages{
+    margin-right: 15px;
+
+}
+.aside-bar{
+    margin-top: auto;
+}
 
 /* section */
 
 
 .hero {
     background-color: var(--hero);
-    height: 350px;
-    padding: 30px;
+    padding: 40px;
+    min-height: 330px;
     
 }
 .title {
+    margin-bottom: 10px;
     font-family: "Protest Revolution", sans-serif;
     font-size: 48px;
-    margin-bottom: 10px;
+   
 }
 .vacancy {
+     margin-bottom: 25px;
     font-style: italic;
     font-size: 32px;
-    margin-bottom: 25px;
+   
 }
 .description{
     font-size: 20px;
+    line-height: 1.5;
 }
 .projects-date a {
     text-decoration: none;
     color: var(--font-color);
     font-size: 24px;
     font-style: oblique;
+    display: inline-block;
+    margin-bottom: 15px;
 }
 
 .projects-date a:hover,
@@ -109,9 +156,13 @@ margin: 15px 0 10px;
 }
 .projects-item:nth-child(2n) {
     background-color: var(--hero);
+    flex-direction: row-reverse;
 
 }
+.projects-item:not(:last-child) {
+    margin-bottom: 20px;
 
+}
 
 .contacts-date a{
 text-decoration: none;
@@ -123,6 +174,44 @@ color: var(--font-color);
 
 .projects-item{
 display: flex;
+align-items: center;
+row-gap: 15px;
 }
+.projects-item p{
+    line-height: 1.5;
+}
+.projects-date> .projects-item:nth-child(2n)> .project-photo{
+    margin-left: 15px;
+}
+.projects-date>.projects-item:nth-child(2n+1)> .project-photo {
+    margin-right: 15px;
+}
+.project-description{
+    text-align: center;
+}
+.education-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+.education{
+    display: block;
+    width: 200px;
+    padding: 5px;
+    text-decoration: none;
+    color: var(--white);
+    border: 1px solid #F18230;
+    margin-left: 15px;
+    border-radius: 25px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 100%),var(--acсent-color);
+    text-align: center;
+    opacity: 0.65;
+        
+}
+.education:hover, 
+.education:focus {
+    background-color: var(--hero);
+    color: var(--font-color);
 
-
+}
