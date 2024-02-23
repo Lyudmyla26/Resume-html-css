@@ -39,6 +39,7 @@ li {
 aside {
     padding: 10px;
 background-color: var(--aside);
+
 }
 .container{
     display: flex;
@@ -49,6 +50,7 @@ background-color: var(--aside);
     margin-right: auto;
    
 }
+
 .avatar-container{
     display: flex;
         justify-content: center;
@@ -115,6 +117,7 @@ letter-spacing: 0.02em;
 .aside-bar{
     margin-top: auto;
 }
+
 
 /* section */
 
