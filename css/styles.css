@@ -6,11 +6,12 @@ body {
         font-size: 16px;
 }
 :root{
-    --aside: #e3dbcc;
+    --aside: #fab397;
     --hero: #faf6f1;
     --acсent-color: #dc8f1b;
     --font-color:#000;
     --white: white;
+    --border-button: #F18230
 }
 h1,
 h2,
@@ -39,6 +40,7 @@ li {
 aside {
     padding: 10px;
 background-color: var(--aside);
+background-image: linear-gradient(to bottom, #faf0cd, var(--aside));
 
 }
 .container{
@@ -84,6 +86,7 @@ background-color: var(--aside);
     opacity: 0;
     border-radius: 50%;
     transition: opacity 0.5s;
+
 }
 
 .thumb-avatar:hover .logo {
@@ -96,18 +99,29 @@ background-color: var(--aside);
     border-radius: 50%;
 }
 .aside-date {
-    padding-left: 30px;
+    padding-left: 15px;
 }
 .title-aside {
 margin: 15px 0 10px;
-
+padding-left: 20px;
 font-size: 28px;
 line-height: 1.5;
 letter-spacing: 0.02em;
 
+
 }
 .aside-list>li:not(:last-child) {
     margin-bottom: 8px;
+}
+.aside-list>li >a{
+    display: flex;
+    align-items: center;
+}
+.icon{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+   
 }
 
 .languages{
@@ -132,7 +146,7 @@ letter-spacing: 0.02em;
     margin-bottom: 10px;
     font-family: "Protest Revolution", sans-serif;
     font-size: 48px;
-   
+    
 }
 .vacancy {
      margin-bottom: 25px;
@@ -173,6 +187,7 @@ color: var(--font-color);
 }
 .contacts-date a:hover, .contacts-date a:focus{ 
     color: var(--acсent-color);
+    fill: var(--acсent-color);
 }
 
 .projects-item{
@@ -204,10 +219,10 @@ row-gap: 15px;
     padding: 5px;
     text-decoration: none;
     color: var(--white);
-    border: 1px solid #F18230;
+    border: 1px solid var(--border-button);
     margin-left: 15px;
     border-radius: 25px;
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 100%),var(--acсent-color);
+background-image: linear-gradient(to right, #faf0cd, var(--aside));
     text-align: center;
     opacity: 0.65;
         
