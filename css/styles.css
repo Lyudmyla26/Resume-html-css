@@ -72,6 +72,8 @@ background-image: linear-gradient(to bottom, #faf0cd, var(--aside));
     align-items: center;
      max-height: 345px;
      max-width: 280px;
+     position: relative;
+     z-index: 1;
         
 }
 .thumb-avatar{
@@ -150,26 +152,42 @@ background-image: linear-gradient(to bottom, #faf0cd, var(--aside));
 
 
 .hero {
-    /* background-color: var(--hero); */
+  position: relative;
 padding: 40px;
     min-height: 330px;
+background-image: linear-gradient(to bottom, var(--white), var(--hero));
+}
+.hero::before {
+    content: '';
+    display: block;
+    background-color: red;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: -80px;
+top: 0;
 background-image: linear-gradient(to bottom, var(--white), var(--hero));
 }
 .title {
     margin-bottom: 10px;
     font-family: "Protest Revolution", sans-serif;
     font-size: 48px;
+    position: relative;
+    z-index: 2;
     
 }
 .vacancy {
      margin-bottom: 25px;
     font-style: italic;
     font-size: 32px;
-   
+position: relative;
+    z-index: 2;
 }
 .description{
     font-size: 20px;
     line-height: 1.5;
+    position: relative;
+        z-index: 2;
 }
 .projects-date>.projects-item:nth-child(2n)>.project-thumb {
     margin-left: 15px;
@@ -182,6 +200,7 @@ background-image: linear-gradient(to bottom, var(--white), var(--hero));
     display: flex;
     align-items: center;
     row-gap: 15px;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .projects-item:nth-child(2n) {
     background-color: var(--hero);
