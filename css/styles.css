@@ -74,7 +74,11 @@ background-image: linear-gradient(to bottom, #faf0cd, var(--aside));
      max-width: 280px;
      position: relative;
      z-index: 1;
+    perspective: 600px;
         
+}
+.avatar-container:hover .thumb-avatar{
+    transform: rotateY(180deg);
 }
 .thumb-avatar{
     position: relative;
