@@ -31,7 +31,8 @@ ul {
 
 img {
     display: block;
-   
+    max-width: 100%;
+    height: auto;
 }
 
 li {
@@ -244,9 +245,9 @@ line-height: 1.5;
    
 
 }
-.project-photo{
+/* .project-photo{
     width: 250px;
-}
+} */
 .project-thumb::before {
     content: ' ';
     width: 100%;
@@ -295,6 +296,9 @@ line-height: 1.5;
     color: var(--white);
 
 }
+.project-thumb:not(:hover) .project-thumb-link {
+    pointer-events: none;
+}
 
 .icons {
     width: 40px;
@@ -304,6 +308,7 @@ line-height: 1.5;
 
 .project-description {
     text-align: center;
+    width: 183px;
     padding: 0 10px;
 }
 
@@ -387,14 +392,17 @@ body {
 }
 .project-thumb {
     width: 550px;
-    height: 280;
 
 }
+.project-description {
+    width: 350px;
+}
+
 .description {
     font-size: 20px;}
-.project-photo {
+/* .project-photo {
     width: 550px;
-}
+} */
 .education {
 width: 200px;}
 
