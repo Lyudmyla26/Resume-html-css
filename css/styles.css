@@ -88,7 +88,7 @@ li {
             perspective: 600px;
             margin-left: auto;
             margin-right: auto;
-            padding-bottom: 330px;
+            padding-bottom: 300px;
                             }
                 
         .avatar-container:hover .thumb-avatar {
@@ -171,6 +171,9 @@ li {
         .languages {
             margin-right: 15px;
         }
+        .mar{
+            margin-bottom: 10px;
+        }
         section{
             background-image: linear-gradient(to bottom, var(--aside), #faf0cd);
 
@@ -181,7 +184,6 @@ li {
             padding: 5px 5px 5px 5px;
             max-width: 420px;
             width: 100%;
-            min-height: 330px;
             left: 50%;
             transform: translateX(-50%);
           
@@ -414,7 +416,9 @@ li {
         .aside-date {
             padding-left: 15px;
          }
-
+        .mar {
+            margin-bottom: 0px;
+                }
         .icon {
             width: 15px;
             height: 15px;
