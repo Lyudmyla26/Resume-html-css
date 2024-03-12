@@ -318,6 +318,8 @@ li {
         .container-education{
             margin-top: 10px;
             padding-bottom: 10px;
+            padding-left: 10px;
+            padding: 0 10px 10px 10px;
             }
         .education-item {
             display: flex;
@@ -344,8 +346,10 @@ li {
         .education:focus {
             background-color: var(--hero);
             color: var(--font-color);
-            
                         }
+        .education-name {
+            width: 225px;
+                 }
 }
 @media screen and (min-width: 420px) and (max-width: 767px) {
         .avatar-container {
@@ -449,6 +453,7 @@ li {
         .container-education {
             margin-top: 0px;
             padding-bottom: 0px;
+            padding-left: 0px;
          }
 
 
