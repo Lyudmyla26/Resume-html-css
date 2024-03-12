@@ -1,5 +1,11 @@
+const hero = document.querySelector('.hero')
+const avatar = document.querySelector('.avatar-container')
+const size = hero.getBoundingClientRect();
+const height = size.height; 
+avatar.style.marginBottom = height + 10 + 'px';
+
 function isElementVisible(el) {
-    var rect = el.getBoundingClientRect();
+    const rect = el.getBoundingClientRect();
     return (
         rect.top >= 0 &&
         rect.bottom <= (window.innerHeight || document.documentElement.clientHeight)

@@ -88,7 +88,7 @@ li {
             perspective: 600px;
             margin-left: auto;
             margin-right: auto;
-            padding-bottom: 300px;
+            /* padding-bottom: 300px; */
                             }
                 
         .avatar-container:hover .thumb-avatar {
@@ -366,9 +366,9 @@ li {
                  }
 }
 @media screen and (min-width: 420px) and (max-width: 767px) {
-        .avatar-container {
+        /* .avatar-container {
             padding-bottom: 260px;
-                }
+                } */
 }
 
 @media screen and (min-width: 768px) {
