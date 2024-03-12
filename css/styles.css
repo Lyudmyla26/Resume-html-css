@@ -38,6 +38,17 @@ img {
 li {
     list-style: none;
 }
+.animate-section {
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: opacity 500ms ease, transform 1000ms ease;
+}
+
+.animate-section.active {
+    opacity: 1;
+    transform: translateX(0);
+}
+
 @media screen and (min-width: 320px){
     body {
             font-size: 10px;
