@@ -144,6 +144,7 @@ li {
         .aside-list-item {
             display: flex;
             align-items: center;
+            font-size: 16px;
          }
                 
         .aside-list-link {
@@ -152,8 +153,8 @@ li {
             }
                 
         .icon {
-            width: 10px;
-            height: 10px;
+            width: 15px;
+            height: 15px;
             margin-right: 10px;
             }
         .contacts-date a {
