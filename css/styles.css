@@ -43,12 +43,19 @@ li {
     transform: translateX(-100px);
     transition: opacity 500ms ease, transform 1000ms ease;
 }
-
+.animate-sections {
+    opacity: 0;
+    transform: translateX(150px);
+    transition: opacity 500ms ease, transform 1000ms ease;
+}
 .animate-section.active {
     opacity: 1;
     transform: translateX(0);
 }
-
+.animate-sections.active {
+    opacity: 1;
+    transform: translateX(0);
+}
 @media screen and (min-width: 320px){
     body {
             font-size: 10px;
